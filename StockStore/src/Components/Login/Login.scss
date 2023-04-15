@@ -14,6 +14,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  //   align-items: top;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: top;
+
+  .LoginBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .empty {
+      height: 100px;
+      width: 100px;
+      background-color: white;
+    }
+  }
 }
