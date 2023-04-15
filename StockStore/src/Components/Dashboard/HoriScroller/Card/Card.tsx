@@ -1,6 +1,6 @@
 import React, { FormEvent, useState } from 'react'
 import './Card.scss'
-import Plot from 'react-plotly.js';
+import ApexCharts from 'apexcharts'
 
 interface cardProps {
     name:string,
@@ -12,6 +12,9 @@ interface cardProps {
 
 
 export default function Card(props:cardProps) {
+    
+    
+    
     
     const handleSubmit=(e:any)=>{
         e.preventDefault()
@@ -31,22 +34,14 @@ export default function Card(props:cardProps) {
     return (
     <div className='Card'>
         <img src={props.img} alt="MainImage" />
-        <Plot
-        data={[{
-            x: [...Array(40)].map(()=>Math.random()),
-            y: [...Array(40)].map(()=>Math.random()),
-            type: 'bar',
-        }]}
-        layout={{width: 300, height: 200}}
-        />
         <h1>{props.name}</h1>
-        <h2>{'PPS: ₹'+props.price}</h2>
-        <h2>{count}</h2>
-        <form onSubmit={handleSubmit}>
+        <h2>{`₹${props.price}/Stock`}</h2>
+        <h2>{count+' Stocks remaining'}</h2>
+        {/* <form onSubmit={handleSubmit}>
             <input type="text" value={countRef} onChange={handleChange} 
             style={(countRef>count)?{color:'red'}:{}}/>
             <input type="submit" value="Submit" disabled={countRef>count}/>
-        </form>
+        </form> */}
     </div>
     )
 }
