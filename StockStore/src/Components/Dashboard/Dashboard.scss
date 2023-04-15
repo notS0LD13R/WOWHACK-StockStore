@@ -1,0 +1,10 @@
+.Dashboard{
+    background-image: url(../../assets/background.png);
+    background-size: cover;
+    
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: 100px 1fr;
+}

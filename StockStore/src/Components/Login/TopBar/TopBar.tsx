@@ -1,11 +1,11 @@
 import "./TopBar.scss";
-
+import logo from '../../../assets/Logo.png'
 export default function TopBar() {
   return (
     <div className="TopBar">
       {/* <div className="background" /> */}
       <div className="icon">
-        <img src="../../../assets/Logo.png" alt="icon" />
+        <img src={logo} alt="Logo"  />
       </div>
       <div className="actionButtons">
         {/* Other buttons */}
