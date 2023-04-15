@@ -9,7 +9,7 @@ export default function LoginBox() {
       </div>
       <div className="LoginBoxButtons">
         <button className="LoginButton">Login</button>
-        <button className="LoginButton">Signup</button>
+        <button className="LoginButton SignupColor">Signup</button>
       </div>
     </div>
   );
