@@ -19,8 +19,18 @@
 .actionButtons {
   display: flex;
   flex-direction: row;
-  // justify-content: space-between;
-  align-items: end;
-  //   width: 100%;
+  align-items: center;
   height: 100%;
+
+  .actionButton {
+    margin-left: 30px;
+    font-family: "Chivo", sans-serif;
+    color: #19116b;
+    // align-items: center;
+    // justify-content: center;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
 }
