@@ -5,7 +5,7 @@ import { MdInventory, MdShoppingCart, MdHelp } from "react-icons/md";
 import { FaFileInvoiceDollar, FaScroll } from "react-icons/fa";
 import { AiFillSetting, AiOutlineMenu } from "react-icons/ai";
 
-export default function SideNav() {
+export default function SideNav(props: { setLink: Function }) {
   const iconAttr = {
     color: "E1CC5B",
     size: "2.5rem",
@@ -23,19 +23,19 @@ export default function SideNav() {
         <AiOutlineMenu color="white" size="2.5rem" onClick={handleMenuClick} />
       </span>
 
-      <span>
+      <span onClick={() => props.setLink("Top")}>
         <MdInventory {...iconAttr} />
         <i>Stocks of the Day</i>
       </span>
-      <span>
+      <span onClick={() => props.setLink("Buy")}>
         <MdShoppingCart {...iconAttr} />
         <i>Buy Stocks</i>
       </span>
-      <span>
+      <span onClick={() => props.setLink("Sell")}>
         <FaFileInvoiceDollar {...iconAttr} />
         <i>Sell Stocks</i>
       </span>
-      <span>
+      <span onClick={() => props.setLink("Apply")}>
         <FaScroll {...iconAttr} />
         <i>Apply for Stock</i>
       </span>
