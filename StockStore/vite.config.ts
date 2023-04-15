@@ -7,4 +7,5 @@ export default defineConfig({
 })
 
 optimizeDeps: {
-  exclude: ['react-icons']}
+
+exclude: ['react-icons','react-chartjs-2']}

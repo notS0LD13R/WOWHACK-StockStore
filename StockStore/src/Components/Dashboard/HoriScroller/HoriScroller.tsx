@@ -32,7 +32,7 @@ export default function HoriScroller() {
   ]
   return (
     <div className='HoriScroller'>
-        {cardValues.map((val)=><Card {...val}/>)}
+        {cardValues.map((val)=><Card {...val} key={val.name}/>)}
     </div>
   )
 }

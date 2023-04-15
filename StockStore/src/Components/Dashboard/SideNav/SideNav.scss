@@ -2,22 +2,47 @@
     height: 100%;
 
     background-color: #1F158B;
-
+    color: #E1CC5B;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
 
-    grid-row: span 2;
+    padding-left: .75rem;
+
+    overflow: hidden;
+    
+    width: 75px;
+
+    position: fixed;
+    left: 0;
+
+    transition: width .5s ease-in-out;
 
     svg{
         cursor: pointer;
-        padding: 0.5rem;
         border-radius: 1rem;
+        flex-shrink: 0;
+
+    }
+
+    span{
+        padding: 0.5rem;
+        color: inherit;
+        display: flex;
+        gap: 1.5rem;
         &:hover{
             background-color: #140d5f  ;
         }
+        i{
+            flex-shrink: 0;
+        }
+
+        align-items: center;
+    }
+
+    &.open{
+        width: 250px;
 
     }
 }
