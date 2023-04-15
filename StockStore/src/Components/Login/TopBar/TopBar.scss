@@ -19,6 +19,7 @@
 .actionButtons {
   display: flex;
   flex-direction: row;
+  overflow: hidden;
   align-items: center;
   height: 100%;
 
@@ -28,6 +29,12 @@
     color: #19116b;
     // align-items: center;
     // justify-content: center;
+  }
+
+  .actionButton:hover {
+    cursor: pointer;
+    // color: #000;
+    font-weight: bold;
   }
 
   .bold {
