@@ -1,36 +1,34 @@
 import { useState } from "react";
-import "./BuyStocks.scss";
+import "./SellStocks.scss";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 
-export default function BuyStocks() {
+export default function SellStocks() {
   return (
-    <div className="BuyStocks">
-      <BuyStockPills />
-      <BuyStockPills />
-      <BuyStockPills />
+    <div className="SellStocks">
+      <SellStockPills />
+      <SellStockPills />
+      <SellStockPills />
     </div>
   );
 }
 
-function BuyStockPills() {
+function SellStockPills() {
   let [isExpanded, setExpanded] = useState(false);
   return (
-    <div className="BuyStockPills">
+    <div className="SellStockPills">
       {/* {!isExpanded && <SchmallPill />} */}
       {isExpanded ? <BigBoiPill /> : <SchmallPill />}
       {/* <div>info</div> */}
-      {/* <div>Buy</div> */}
-      <div className="PillExpandButtonDiv">
-        <div
-          className="PillExpandButton"
-          onClick={() => setExpanded(!isExpanded)}
-        >
-          {isExpanded ? (
-            <BsChevronUp size="1.5rem" />
-          ) : (
-            <BsChevronDown size="1.5rem" />
-          )}
-        </div>
+      {/* <div>Sell</div> */}
+      <div
+        className="PillExpandButton"
+        onClick={() => setExpanded(!isExpanded)}
+      >
+        {isExpanded ? (
+          <BsChevronUp size="1.5rem" />
+        ) : (
+          <BsChevronDown size="1.5rem" />
+        )}
       </div>
     </div>
   );
@@ -76,11 +74,11 @@ function BigBoiPill() {
         </div>
         {/* <div className="col"> */}
         <div className="col last">
-          <div className="colelem">How many stocks to buy?</div>
+          <div className="colelem">How many stocks to Sell?</div>
           <div className="row">
             <input type="text" className="ShareInput colelem" />
-            <div className="colelem BuyButton" onClick={() => {}}>
-              Buy
+            <div className="colelem SellButton" onClick={() => {}}>
+              Sell
             </div>
           </div>
           {/* <div className="colelem">Sell</div> */}

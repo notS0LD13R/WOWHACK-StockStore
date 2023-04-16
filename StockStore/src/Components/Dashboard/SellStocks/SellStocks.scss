@@ -1,10 +1,10 @@
-.BuyStocks {
+.SellStocks {
   display: flex;
   flex-direction: column;
   margin: 12.5px;
   padding: 12.5px;
 
-  .BuyStockPills {
+  .SellStockPills {
     margin: 10px 0;
     padding: 10px;
     border-radius: 10px;
@@ -13,21 +13,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    .PillExpandButtonDiv {
-      height: 100%;
-      .PillExpandButton {
-        //   background-color: #0000002f;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 40px;
-        width: 40px;
-        border-radius: 20px;
-      }
-      .PillExpandButton:hover {
-        cursor: pointer;
-        background-color: #0000002f;
-      }
+    .PillExpandButton {
+      //   background-color: #0000002f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+    }
+    .PillExpandButton:hover {
+      cursor: pointer;
+      background-color: #0000002f;
     }
     .CompanyName {
       font-size: 1.25rem;
@@ -117,7 +114,7 @@
             box-sizing: border-box;
           }
 
-          .BuyButton {
+          .SellButton {
             background-color: red;
             color: white;
             padding: 10px 20px;
@@ -126,7 +123,7 @@
             user-select: none;
           }
 
-          .BuyButton:hover {
+          .SellButton:hover {
             cursor: pointer;
             background-color: #ff0000b3;
           }
@@ -150,4 +147,4 @@
 //     same details
 //     graph
 //     company values
-//     buy button
+//     Sell button

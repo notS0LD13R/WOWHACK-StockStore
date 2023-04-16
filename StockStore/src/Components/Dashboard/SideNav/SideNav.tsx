@@ -13,16 +13,19 @@ export default function SideNav(props: { setLink: Function }) {
 
   const [open, setOpen] = useState(false);
 
-  const handleMenuClick = () => {
-    setOpen(!open);
+  const handleMenuClick = (val: boolean) => {
+    setOpen(val);
   };
 
-  
-    return (
-    <div className={`SideNav ${+open?'open':''}`}>
-        
-            <AiOutlineMenu color='white' size='2.5rem' onClick={handleMenuClick}/>
-        
+  return (
+    <div
+      className={`SideNav ${+open ? "open" : ""}`}
+      onMouseEnter={() => handleMenuClick(true)}
+      onMouseLeave={() => handleMenuClick(false)}
+    >
+      <span className="MenuButton">
+        <AiOutlineMenu color="white" size="2.5rem" className="MenuIcon" />
+      </span>
 
       <span onClick={() => props.setLink("Top")}>
         <MdInventory {...iconAttr} />
@@ -30,6 +33,7 @@ export default function SideNav(props: { setLink: Function }) {
       </span>
       <span onClick={() => props.setLink("Buy")}>
         <MdShoppingCart {...iconAttr} />
+
         <i>Buy Stocks</i>
       </span>
       <span onClick={() => props.setLink("Sell")}>
