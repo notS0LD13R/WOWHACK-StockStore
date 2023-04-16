@@ -20,9 +20,9 @@ export default function SideNav(props:{setLink:Function}) {
   
     return (
     <div className={`SideNav ${+open?'open':''}`}>
-        <span>
+        
             <AiOutlineMenu color='white' size='2.5rem' onClick={handleMenuClick}/>
-        </span>
+        
 
         <span 
         onClick={()=>props.setLink('Top')}>
