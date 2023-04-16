@@ -1,8 +1,0 @@
-.Dashboard {
-  background-image: url(../../assets/background.png);
-  background-size: cover;
-  height: 100vh;
-  display: grid;
-  padding-left: 75px;
-  grid-template-rows: 100px 1fr;
-}/*# sourceMappingURL=Dashboard.css.map */
