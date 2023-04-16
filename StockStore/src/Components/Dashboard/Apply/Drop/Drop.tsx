@@ -25,7 +25,7 @@ export default function Drop() {
           <p>Drag 'n' drop some files here, or click to select files</p>
       }
     <br />
-    <p>Uploaded:{filename}</p>
+    {filename?<p>Uploaded:{filename}</p>:''}
     </div>
 
   )

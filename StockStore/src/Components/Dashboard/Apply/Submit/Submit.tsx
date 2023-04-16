@@ -19,7 +19,7 @@ export default function Submit() {
         </label>
 
         <button onClick={()=>setTick(true)}>Submit </button>
-        <p>Submitted Successfully {tick? <BsCheckCircle /> : ''}</p>
+        <p>{tick? 'Submitted Successfully' : ''} {tick? <BsCheckCircle /> : ''}</p>
     </div>
   )
 }

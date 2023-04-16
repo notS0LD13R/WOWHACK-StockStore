@@ -121,6 +121,10 @@
             border-radius: 20px;
             // make text non selectable
             user-select: none;
+
+            &:disabled{
+              background-color: grey;
+            }
           }
 
           .BuyButton:hover {
