@@ -13,18 +13,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    .PillExpandButton {
-      //   background-color: #0000002f;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      width: 40px;
-      border-radius: 20px;
-    }
-    .PillExpandButton:hover {
-      cursor: pointer;
-      background-color: #0000002f;
+    .PillExpandButtonDiv {
+      height: 100%;
+      .PillExpandButton {
+        //   background-color: #0000002f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+      }
+      .PillExpandButton:hover {
+        cursor: pointer;
+        background-color: #0000002f;
+      }
     }
     .CompanyName {
       font-size: 1.25rem;
@@ -121,6 +124,10 @@
             border-radius: 20px;
             // make text non selectable
             user-select: none;
+
+            &:disabled {
+              background-color: grey;
+            }
           }
 
           .SellButton:hover {
