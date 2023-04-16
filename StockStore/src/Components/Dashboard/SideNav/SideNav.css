@@ -1,0 +1,35 @@
+.SideNav {
+  height: 100%;
+  background-color: #1F158B;
+  color: #E1CC5B;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 0.75rem;
+  overflow: hidden;
+  width: 75px;
+  position: fixed;
+  left: 0;
+  transition: width 0.5s ease-in-out;
+}
+.SideNav svg {
+  cursor: pointer;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+.SideNav span {
+  padding: 0.5rem;
+  color: inherit;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.SideNav span:hover {
+  background-color: #140d5f;
+}
+.SideNav span i {
+  flex-shrink: 0;
+}
+.SideNav.open {
+  width: 250px;
+}/*# sourceMappingURL=SideNav.css.map */
